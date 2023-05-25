@@ -4,12 +4,20 @@
     padding: 0px;
  }
 
-/******** header ********/
+
+ /******** body ********/
+body {
+    font-size: 0;
+}
+
+
+/***************** header ******************/
 header {
     width: 100%;
     height: 100px;
     margin-bottom: 50px;
 }
+
 
 /* Mobile */
 header {
@@ -31,13 +39,15 @@ header {
     }
 }
 
-
 /******** seccion1 ********/
 .seccion1 {
     width: 75%;
     margin: 0px auto;
     padding: 0px;
     background-color: #ff00aa;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 p {
@@ -51,7 +61,6 @@ text-align: center;
 
 /* Mobile */
     .cajas {
-        display: block;
         width: 100%;
         height: 300px;
         background-color: #ff00aa;
@@ -59,8 +68,7 @@ text-align: center;
 /* Tablet: */
 @media only screen and (min-width: 768px) {
     .cajas {
-        display: inline-block;
-        width: 33.333%;
+        width: 50%;
         height: 150px;
         background-color: #00f2ff;
     }
@@ -68,7 +76,6 @@ text-align: center;
 /* PC: */
 @media only screen and (min-width: 1200px) {
     .cajas {
-        display: inline-block;
         width:33.333%;
         height: 500px;
         background-color: #00ff99;
