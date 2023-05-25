@@ -4,19 +4,18 @@
     padding: 0px;
  }
 
-
- /******** body ********/
-body {
-    font-size: 0;
-}
-
-
-/***************** header ******************/
+/******** header ********/
 header {
     width: 100%;
     height: 100px;
     margin-bottom: 50px;
 }
+
+/******** body ********/
+body {
+    font-size: 0;
+}
+
 
 
 /* Mobile */
@@ -45,9 +44,7 @@ header {
     margin: 0px auto;
     padding: 0px;
     background-color: #ff00aa;
-    font-size: 2rem;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 16em;
 }
 
 p {
@@ -61,6 +58,7 @@ text-align: center;
 
 /* Mobile */
     .cajas {
+        display: block;
         width: 100%;
         height: 300px;
         background-color: #ff00aa;
@@ -68,7 +66,8 @@ text-align: center;
 /* Tablet: */
 @media only screen and (min-width: 768px) {
     .cajas {
-        width: 50%;
+        display: inline-block;
+        width: 33.333%;
         height: 150px;
         background-color: #00f2ff;
     }
@@ -76,6 +75,7 @@ text-align: center;
 /* PC: */
 @media only screen and (min-width: 1200px) {
     .cajas {
+        display: inline-block;
         width:33.333%;
         height: 500px;
         background-color: #00ff99;
